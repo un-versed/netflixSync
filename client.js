@@ -5,6 +5,6 @@ const config = require('./config')
 io.on('play', function(data) {
     robot.moveMouse(config.coord.x, config.coord.y)
     setTimeout(function() {
-
+        robot.mouseClick()
     }, 3000);
 })
