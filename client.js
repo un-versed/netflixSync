@@ -6,5 +6,8 @@ socket.on('play', function (data) {
     robot.moveMouse(config.coord.x, config.coord.y)
     setTimeout(function () {
         robot.mouseClick()
-    }, 3000);
+    }, 0);
 })
+
+var date = new Date();
+var current_hour = date.getHours() + ':' + date.getMinutes();
